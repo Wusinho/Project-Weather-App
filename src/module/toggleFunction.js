@@ -1,10 +1,5 @@
-
- import functionToCelsius from './functionToCelsius'
-
-
+import functionToCelsius from './functionToCelsius';
 
 export default async (value) => {
-   
-    document.getElementById('output').innerText = functionToCelsius(value)  
-    
-  }
+  document.getElementById('output').innerText = functionToCelsius(value);
+};

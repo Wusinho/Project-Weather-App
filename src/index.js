@@ -16,20 +16,13 @@ const btnSubmit = document.getElementById('submit');
 
 btnSubmit.addEventListener('click', (e) => {
   const currentSearch = input.value;
-    if (currentSearch) {
-
-      getData(currentSearch)
+  if (currentSearch) {
+    getData(currentSearch)
 
       .then((data) => {
-
         createInfo(data);
-      })
-    } 
+      });
+  }
 
   e.preventDefault();
 });
-
-
-
-
-
