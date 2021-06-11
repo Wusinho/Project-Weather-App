@@ -41,8 +41,6 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      //   appMountId: "app",
-      //   filename: "index.html",
       template: './src/index.html',
     }),
   ],
