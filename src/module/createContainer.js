@@ -1,5 +1,3 @@
-// import views from "../views/card.html";
-
 export default async (data) => {
   const list = document.getElementById("content");
   const row = document.createElement("div");
