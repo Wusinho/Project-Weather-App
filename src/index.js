@@ -1,9 +1,12 @@
+ /* eslint-disable */
+
 import './main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import formView from './module/formView';
 import searchView from './module/searchView';
 import getData from './module/getData';
 import createInfo from './module/createInfo';
+import toggleFunction from './module/toggleFunction';
 
 const getForm = document.getElementById('form');
 const getContent = document.getElementById('content');
@@ -25,3 +28,11 @@ btnSubmit.addEventListener('click', (e) => {
 
   e.preventDefault();
 });
+
+const getTogle = document.getElementById('btn')
+
+getTogle.addEventListener('click', (e) => {
+  toggleFunction()
+  e.preventDefault();
+});
+
