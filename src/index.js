@@ -21,9 +21,7 @@ btnSubmit.addEventListener('click', (e) => {
     .then((data) => {
       createInfo(data);
     })
-    .catch((error) => {
-      console.error('error', error);
-    });
+    .catch((error) => error);
 
   e.preventDefault();
 });
