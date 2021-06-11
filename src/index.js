@@ -1,12 +1,9 @@
- /* eslint-disable */
-
 import './main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import formView from './module/formView';
 import searchView from './module/searchView';
 import getData from './module/getData';
 import createInfo from './module/createInfo';
-import toggleFunction from './module/toggleFunction';
 
 const getForm = document.getElementById('form');
 const getContent = document.getElementById('content');
@@ -19,20 +16,20 @@ const btnSubmit = document.getElementById('submit');
 
 btnSubmit.addEventListener('click', (e) => {
   const currentSearch = input.value;
+    if (currentSearch) {
 
-  getData(currentSearch)
-    .then((data) => {
-      createInfo(data);
-    })
-    .catch((error) => error);
+      getData(currentSearch)
+
+      .then((data) => {
+
+        createInfo(data);
+      })
+    } 
 
   e.preventDefault();
 });
 
-const getTogle = document.getElementById('btn')
 
-getTogle.addEventListener('click', (e) => {
-  toggleFunction()
-  e.preventDefault();
-});
+
+
 

@@ -1,17 +1,10 @@
 
- /* eslint-disable */
+ import functionToCelsius from './functionToCelsius'
 
 
-let clicked = true;
 
-export default() => {
-    if(!clicked) {
-      clicked = true;
-      document.getElementById('btn').innerHTML = "On"
-      document.getElementById('output').innerHTML = "Switched On"
-    } else {
-      clicked = false
-      document.getElementById('btn').innerHTML = "Off"
-      document.getElementById('output').innerHTML = "Switched Off"
-    }
+export default async (value) => {
+   
+    document.getElementById('output').innerText = functionToCelsius(value)  
+    
   }
