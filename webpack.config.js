@@ -1,38 +1,38 @@
 // const webpack = require('webpack');
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
       {
         test: /\.svg$/,
-        use: "file-loader",
+        use: 'file-loader',
       },
       {
         test: /\.png$/,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
             options: {
-              mimetype: "image/png",
+              mimetype: 'image/png',
             },
           },
         ],
@@ -43,7 +43,7 @@ const config = {
     new HtmlWebpackPlugin({
       //   appMountId: "app",
       //   filename: "index.html",
-      template: "./src/index.html",
+      template: './src/index.html',
     }),
   ],
 };
