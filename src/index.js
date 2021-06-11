@@ -1,6 +1,7 @@
 import "./main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import formView from "./module/form";
+import searchView from "./views/card.html";
 import getData from "./module/getData";
 import createContainer from "./module/createContainer";
 import UI from "./module/ui";
