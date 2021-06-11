@@ -4,3 +4,14 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: auto; 
    }
+
+#card {
+    opacity: 0.5;
+    transition: 0.3s;
+
+}
+
+#card:hover {
+    transition: 0.3s;
+    opacity: 1
+}

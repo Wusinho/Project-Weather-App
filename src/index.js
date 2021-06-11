@@ -1,24 +1,25 @@
 import "./main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import formView from "./module/formView";
-import searchView from "./views/card.html";
+import searchView from "./module/searchView";
 import getData from "./module/getData";
-import createContainer from "./module/createContainer";
+import createInfo from "./module/createInfo";
 
 const getForm = document.getElementById("form");
 const getContent = document.getElementById("content");
-const input = document.getElementById("searchCity");
-const btnSubmit = document.getElementById("submit");
 
 getForm.appendChild(formView());
 getContent.appendChild(searchView());
+
+const input = document.getElementById("searchCity");
+const btnSubmit = document.getElementById("submit");
 
 btnSubmit.addEventListener("click", (e) => {
   const currentSearch = input.value;
 
   getData(currentSearch)
     .then((data) => {
-      createContainer(data);
+      createInfo(data);
     })
     .catch((error) => {
       console.error("error", error);
