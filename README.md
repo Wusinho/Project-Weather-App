@@ -8,7 +8,7 @@ This project is a weather app using OpenWeather API to display the temperature a
 
 ## Live View
 
-<!-- [Live View](https://lazo-todolist.netlify.app/) -->
+[Live View](https://inspiring-aryabhata-d48dbd.netlify.app/)
 
 ## Built with
 
