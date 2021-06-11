@@ -4,7 +4,7 @@ export default async function getInfo(city) {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
+    localStorage.setItem(city, JSON.stringify(data));
     return data;
   } catch (error) {
     console.log("Fetch Error", error);

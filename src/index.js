@@ -7,11 +7,11 @@ import UI from "./module/ui";
 const getForm = document.getElementById("form");
 getForm.appendChild(formView());
 
-const search = document.getElementById("searchCity");
+const input = document.getElementById("searchCity");
 const btnSubmit = document.getElementById("submit");
 
 btnSubmit.addEventListener("click", (e) => {
-  const currentVal = search.value;
+  const currentVal = input.value;
   getData(currentVal);
 
   e.preventDefault();
