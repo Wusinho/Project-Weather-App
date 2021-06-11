@@ -1,8 +1,6 @@
-#page {
-    height: 100vh;
-    background-color: red;
-}
-
-h1 {
-    color: blue;
-}
+body {
+    background-image: url("../assets/background.png");
+    // background-position: center ; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto; 
+   }
